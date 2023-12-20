@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { SignedOut } from '@clerk/nextjs'
+import { Button } from '../ui/button'
 const Header = () => {
   return (
     <header className='w-full border-b'>
@@ -11,7 +13,13 @@ const Header = () => {
         </Link>
 
         <div className='flex w-32 justify-end gap-3'>
-          
+          <SignedOut>
+            <Button asChild className='rounded-full' size="lg">
+              <Link href="/sign-in">
+                Login
+              </Link>
+            </Button>
+          </SignedOut>
         </div>
       </div>
     </header>
