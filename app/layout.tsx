@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: 'eventscale',
   description: 'eventscale is an event, ticketing and audience management service.',
   icons: {
-    icon: '/assets/images/logo(2).png'
+    icon: '/assets/images/logo1.png'
   }
 }
 
