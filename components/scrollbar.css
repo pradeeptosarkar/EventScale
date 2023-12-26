@@ -1,0 +1,36 @@
+/* custom-scrollbar.css */
+
+/* WebKit Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #6b46c1; /* Set your primary color here */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #d1d5db; /* Set a contrasting color here */
+  }
+  
+  /* Firefox Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #6b46c1 #d1d5db; /* Set your primary and contrasting colors here */
+  }
+  
+  /* Optional: Adjust the scrollbar width and color for Firefox */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #6b46c1;
+    border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: #d1d5db;
+  }
+  
