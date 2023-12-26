@@ -7,6 +7,7 @@ import { SearchParamProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import "../../components/scrollbar.css"
+import BackToTopButton from "@/components/shared/BackToTopButton";
 
 export default async function Home({ searchParams }: SearchParamProps) {
   const page = Number(searchParams?.page) || 1;
@@ -64,6 +65,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
           totalPages={events?.totalPages}
         />
       </section>
+      <BackToTopButton />
     </>
   );
 }
