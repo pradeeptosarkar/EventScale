@@ -21,7 +21,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
 
   return (
     <>
-      <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10">
+      <section className="bg-gradient-to-r from-purple-300 to-indigo-300 bg-contain py-10 md:py-16">
         <div className="wrapper 2xl:gap-0">
           <div className="flex flex-col items-center justify-center gap-8">
             <h1 className="h1-bold text-center text-4xl md:text-5xl lg:text-6xl text-white bg-indigo-600 p-6 mb-6 rounded-md shadow-lg">
@@ -37,14 +37,6 @@ export default async function Home({ searchParams }: SearchParamProps) {
               <Link href="#events">Explore Now</Link>
             </Button>
           </div>
-
-          {/* <Image 
-            src="/assets/images/hero.png"
-            alt="hero"
-            width={1000}
-            height={1000}
-            className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]"
-          /> */}
         </div>
       </section>
 
